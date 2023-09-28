@@ -5,7 +5,16 @@ import stanford.karel.Karel;
 
 public class Problem01 extends Karel{
 	public void run(){
+	/*
+	 * pre: karel is at 1x1, facing east, beeper at 3x1
+	 * post:
+	 */
+		
 		move();
+		move();
+		pickBeeper();
+		move();
+		putBeeper();
 	}
 }
 
