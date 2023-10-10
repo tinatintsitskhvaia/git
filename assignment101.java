@@ -3,9 +3,13 @@ import stanford.karel.*;
 public class assignment101 extends SuperKarel {
 	public void run (){
 		leaveTheHouse();
-		pickBeeper();
-		turnAround();
+		takeTheNewspaper();
 		goBackToTheInitialPosition();
+	}
+
+	private void takeTheNewspaper() {
+		pickBeeper();
+		turnAround();	
 	}
 
 	private void leaveTheHouse() {
