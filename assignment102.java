@@ -9,6 +9,7 @@ public class assignment102 extends SuperKarel{
 		if(frontIsBlocked()) {
 			fixTheRow();
 		}
+		goBack();
 	}
 
 
@@ -34,6 +35,9 @@ public class assignment102 extends SuperKarel{
 				}else{
 					move();
 				}
+			if(frontIsBlocked() && noBeepersPresent()){
+				putBeeper();
+			}
 		}
 		
 	}
