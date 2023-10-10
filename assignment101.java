@@ -30,5 +30,7 @@ public class assignment101 extends SuperKarel {
 		while( frontIsClear()) {
 			move();
 		}
+		turnRight();
+		turnRight();
 	}
 }
