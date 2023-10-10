@@ -41,4 +41,4 @@ public class assignment102 extends SuperKarel{
 		}
 		
 	}
-}
+
