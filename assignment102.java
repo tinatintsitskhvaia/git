@@ -35,8 +35,9 @@ public class assignment102 extends SuperKarel{
 				}else{
 					move();
 				}
-		while(frontIsBlocked())
-				putBeeper();
+		if(frontIsBlocked() && noBeepersPresent()) {
+			putBeeper();
+		}
 			}
 		}
 		
