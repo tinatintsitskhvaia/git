@@ -29,10 +29,18 @@ public class assignment102 extends SuperKarel{
 
 	private void fixTheRow() {
 		turnLeft();
-		
+		while(frontIsClear()){
+			if(beepersPresent()){
+				move();
+			}else{
+				putBeeper();
+				move();
+			}
 		}
-	
+		if(noBeepersPresent()){
+			putBeeper();
 		}
-		
+	}	
+}
 	
 
