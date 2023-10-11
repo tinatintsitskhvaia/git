@@ -24,6 +24,7 @@ public class assignment103 extends SuperKarel{
 	}
 
 	private void fillLine() {
+		if(leftIsClear()){
 		putBeeper();
 		while(frontIsClear()){
 			if(frontIsClear()){
@@ -38,5 +39,5 @@ public class assignment103 extends SuperKarel{
 		}
 		
 	}
-
+}
 
