@@ -14,8 +14,7 @@ public class assignment104  extends SuperKarel{
 				}else{
 					putBeeper();
 				}
-			}else{
-				putBeeper();
+			
 			}
 		}
 		
