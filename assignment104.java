@@ -1,20 +1,23 @@
 import stanford.karel.*;
 public class assignment104  extends SuperKarel{
 	public void run() {
-		fillLine();
+	fillLine();
 	}
 
 	private void fillLine() {
+		putBeeper();
 		while(frontIsClear()){
 			if(frontIsClear()){
-				putBeeper();
+				move();
 				if(frontIsClear()){
 					move();
-					if(frontIsClear()){
-						move();
-					}
+				}else{
+					putBeeper();
 				}
+			}else{
+				putBeeper();
 			}
 		}
+		
 	}
-}
+}	
