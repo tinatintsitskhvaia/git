@@ -11,9 +11,9 @@ public class assignment104  extends SuperKarel{
 				move();
 				if(frontIsClear()){
 					move();
-				}else{
-					putBeeper();
 				}
+			}else{
+				putBeeper();
 			}
 		}
 	}
