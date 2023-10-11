@@ -6,14 +6,14 @@ public class assignment104  extends SuperKarel{
 
 	private void fillLine() {
 		while(frontIsClear()){
-			putBeeper();
 			if(frontIsClear()){
-				move();
+				putBeeper();
 				if(frontIsClear()){
 					move();
+					if(frontIsClear()){
+						move();
+					}
 				}
-			}else{
-				putBeeper();
 			}
 		}
 	}
