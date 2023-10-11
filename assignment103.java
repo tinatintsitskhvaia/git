@@ -1,11 +1,18 @@
 import stanford.karel.*;
 public class assignment103 extends SuperKarel{
 	public void run () {
-		while(notFacingNorth()){
-			fillLine();
-			moveToTheNextLineIfPossible();
+		if(frontIsClear()){
+			while(frontIsClear()){
+				fillLine();
+			}
+		}else{
+			turnLeft();
+			while(frontIsClear()){
+				fillLine();
+			}
 		}
 	}
+	
 
 	private void moveToTheNextLineIfPossible() {
 		if( facingEast() && leftIsClear()){
@@ -24,19 +31,19 @@ public class assignment103 extends SuperKarel{
 	}
 
 	private void fillLine() {
-		if(leftIsClear()){
 		putBeeper();
-		while(frontIsClear()){
+		if(frontIsClear()){
+			move();
 			if(frontIsClear()){
 				move();
-				if(frontIsClear()){
-					move();
-					putBeeper();
-				}
-				
-				}
+			}else{
+				moveToTheNextLineIfPossible();
 			}
+		}else{
+			moveToTheNextLineIfPossible();
 		}
+
+			
 		
 	}
 }
