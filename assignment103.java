@@ -32,8 +32,6 @@ public class assignment103 extends SuperKarel{
 					move();
 				
 				}
-			}else{
-				putBeeper();
 			}
 		}
 		
