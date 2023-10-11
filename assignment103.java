@@ -20,7 +20,7 @@ public class assignment103 extends SuperKarel{
 			move();
 			turnLeft();
 		}else{
-			if( facingEast() && rightIsClear()) {
+			if( facingWest() && rightIsClear()) {
 			turnRight();
 			move();
 			turnRight();
