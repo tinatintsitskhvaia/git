@@ -24,17 +24,19 @@ public class assignment103 extends SuperKarel{
 	}
 
 	private void fillLine() {
+		putBeeper();
 		while(frontIsClear()){
-			putBeeper();
 			if(frontIsClear()){
 				move();
 				if(frontIsClear()){
 					move();
+					putBeeper();
+				}
 				
 				}
 			}
 		}
 		
 	}
-}
+
 
