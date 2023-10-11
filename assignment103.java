@@ -30,6 +30,7 @@ public class assignment103 extends SuperKarel{
 				move();
 				if(frontIsClear()){
 					move();
+				
 				}
 			}
 		}
