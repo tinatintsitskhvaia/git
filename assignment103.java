@@ -15,16 +15,17 @@ public class assignment103 extends SuperKarel{
 	
 
 	private void moveToTheNextLineIfPossible() {
-		if( facingEast() && leftIsClear()){
+		if( facingEast()){
+			if(leftIsClear()){
 			turnLeft();
 			move();
 			turnLeft();
 		}else{
-			if( facingWest() && rightIsClear()) {
+			if( rightIsClear()) {
 			turnRight();
 			move();
 			turnRight();
-		
+			}
 			}
 		}	
 	}
