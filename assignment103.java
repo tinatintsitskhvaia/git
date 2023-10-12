@@ -15,7 +15,6 @@ public class assignment103 extends SuperKarel{
 		while(frontIsClear()){
 			move();
 		}
-		move();
 	}
 	
 
