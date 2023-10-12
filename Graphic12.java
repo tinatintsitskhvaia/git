@@ -2,6 +2,7 @@ import acm.graphics.*;
 import acm.program.GraphicsProgram;
 import acm.graphics.GLine;
 public class Graphic12  extends GraphicsProgram {
+	private static final double PI = 3.14;
 	public void run() {
 		drawLine();
 			
