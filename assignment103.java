@@ -6,45 +6,32 @@ public class assignment103 extends SuperKarel{
 				fillLine();
 			}
 		}else{
-			turnLeft();
-			while(frontIsClear()){
-				fillLine();
+			goBack();
 			}
 		}
+	private void goBack() {
+		turnAround();
+		while(frontIsClear()){
+			move();
+		}
+		move();
 	}
 	
 
-	private void moveToTheNextLineIfPossible() {
-		if( facingEast()){
-			if(leftIsClear()){
-			turnLeft();
-			move();
-			turnLeft();
-		}else{
-			if( rightIsClear()) {
-			turnRight();
-			move();
-			turnRight();
-			}
-			}
-		}	
-	}
-
 	private void fillLine() {
+		while(frontIsClear()){
+	
 		putBeeper();
 		if(frontIsClear()){
 			move();
 			if(frontIsClear()){
 				move();
-			}else{
-				moveToTheNextLineIfPossible();
-			}
-		}else{
-			moveToTheNextLineIfPossible();
+			
 		}
 
-			
+		}
 		
 	}
-}
+	}
 
+}
