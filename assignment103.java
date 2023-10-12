@@ -5,7 +5,8 @@ public class assignment103 extends SuperKarel{
 			while(frontIsClear()){
 				fillLine();
 			}
-		}else{
+		}
+		while(frontIsBlocked()){
 			goBack();
 			}
 		}
