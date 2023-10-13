@@ -3,11 +3,14 @@ public class ass13 extends SuperKarel{
 	public void run(){
 		fillTheRow();
 		while(leftIsClear()){
+			if(leftIsClear()){
 			fillTheVerticalRow();
 			move();
+			}else{
+				turnLeft();
 			}
 		}
-	
+	}
 
 		
 		
