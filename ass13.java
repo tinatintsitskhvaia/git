@@ -11,6 +11,7 @@ public class ass13 extends SuperKarel{
 		turnAround();
 		while(frontIsClear()){
 			move();
+			turnLeft();
 			fillVerticalRow();
 		}
 		
