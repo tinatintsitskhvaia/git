@@ -6,6 +6,10 @@ public class ass13 extends SuperKarel{
 		fillVerticalRow();
 		goBack();
 		turnAround();
+		if(frontIsClear()){
+			move();
+			fillVerticalRow();
+		}
 }
 
 	private void fillVerticalRow() {
