@@ -30,8 +30,9 @@ public class isev3 extends SuperKarel{
 				}
 			}else{
 				turnRight();
+				turnRight();
 			}
-			turnRight();
+			
 		}
 				
 				}
