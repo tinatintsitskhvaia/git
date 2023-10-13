@@ -4,6 +4,7 @@ public class ass13 extends SuperKarel{
 		fillTheRow();
 		while(leftIsClear()){
 			if(leftIsClear()){
+				turnLeft();
 				fillTheVerticalRow();
 				
 				}
@@ -15,7 +16,6 @@ public class ass13 extends SuperKarel{
 		
 		
 	private void fillTheVerticalRow() {
-		turnLeft();
 		if(beepersPresent()){
 			while(frontIsClear()){
 				if(frontIsClear()){
