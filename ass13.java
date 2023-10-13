@@ -15,6 +15,11 @@ public class ass13 extends SuperKarel{
 					fillTheRow();
 				}
 			}
+		}else{
+			if(frontIsClear()){
+				move();
+				fillTheRow();
+			}
 		}
 		
 	}
