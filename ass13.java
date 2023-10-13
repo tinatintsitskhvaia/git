@@ -36,13 +36,12 @@ public class ass13 extends SuperKarel{
 		
 	}
 	private void fillTheLine() {
+		while(frontIsClear()){
 		putBeeper();
 		while(frontIsClear()){
 			move();
 			if(frontIsClear()){
 				move();
-				if(noBeepersPresent()){
-					putBeeper();
 				}
 				
 			}
