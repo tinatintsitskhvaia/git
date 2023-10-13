@@ -1,51 +1,55 @@
 import stanford.karel.SuperKarel;
 public class ass13 extends SuperKarel{
 	public void run() {
-		while(notFacingNorth()){
-			fillTheLine();
-			moveToTheNextLineIfPossible();
+		fillCheckBoard();
 			
 		}
-	}
-	private void moveToTheNextLineIfPossible() {
-		if(facingEast() && leftIsClear()){
-			if(beepersPresent()){
-				turnLeft();
-				move();
-				turnLeft();
-				move();
-				
-			}else{
-				turnLeft();
-				move();
-				turnLeft();
-			}
-		}else if( facingWest() && rightIsClear()){
-			if(beepersPresent()){
-				turnRight();
-				move();
-				turnRight();
-				move();
-			}else{
-				turnRight();
-				move();
-				turnRight();
-				
-			}
-		}
-		
-	}
-	private void fillTheLine() {
-		putBeeper();
-		if(frontIsClear()){
+
+	private void fillCheckBoard() {
+		fillTwoRows();
+		while(frontIsClear()){
 			move();
 			if(frontIsClear()){
-				move();
-				}
-				
+				turnRight();
+				fillTwoRows();
+			}else{
+				turnRight();
+				fillRow();
 			}
 		}
 		
 	}
 
+	private void fillRow() {
+		putBeeper();
+		while(frontIsClear()){
+			if(frontIsClear()){
+				move();
+				if(frontIsClear()){
+					move();
+					putBeeper();
+				}
+			}
+		}
+		
+	}
 
+	private void fillTwoRows() {
+		fillRow();
+		if(beepersPresent()){
+			turnLeft();
+			move();
+			turnLeft();
+			if(frontIsClear()){
+				move();
+			}
+			fillRow();
+		}else{
+			turnLeft();
+			move();
+			turnLeft();
+			fillRow();
+		}
+		turnRight();
+	}
+	}
