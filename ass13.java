@@ -39,7 +39,7 @@ public class ass13 extends SuperKarel{
 		while(frontIsClear()){
 			move();
 		}
-		turnRight();
+		turnLeft();
 		}
 		
 	
