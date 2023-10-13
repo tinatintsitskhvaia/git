@@ -13,6 +13,7 @@ public class ass13 extends SuperKarel{
 				fillVerticalRow();
 			}
 			turnRight();
+			turnRight();
 			goBack();
 		}
 	}
