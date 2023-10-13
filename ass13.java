@@ -3,19 +3,12 @@ public class ass13 extends SuperKarel{
 	public void run(){
 		fillTheRow();
 		goBack();
-		while(frontIsClear()){
+		while(rightIsClear()){
 			fillVerticalRow();
-			goBack();
-			turnAround();
-			if(frontIsClear()){
-				move();
-				turnLeft();
-				fillVerticalRow();
-			}
-			goBack();
 		}
-	}
+		}
 	private void fillVerticalRow() {
+		turnRight();
 		if(beepersPresent()){
 			if(frontIsClear()){
 				move();
@@ -30,7 +23,7 @@ public class ass13 extends SuperKarel{
 				fillTheRow();
 			}
 		}
-		
+		goBack();
 	}
 
 	private void goBack() {
@@ -38,7 +31,7 @@ public class ass13 extends SuperKarel{
 		while(frontIsClear()){
 			move();
 		}
-		turnRight();
+		turnAround();
 	}
 
 	private void fillTheRow() {
