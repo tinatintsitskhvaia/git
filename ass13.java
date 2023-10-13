@@ -5,11 +5,12 @@ public class ass13 extends SuperKarel{
 		while(leftIsClear()){
 			if(leftIsClear()){
 				fillTheVerticalRow();
-				if(frontIsClear()){
+				}
+			if(frontIsClear()){
 					move();
 				}
 				
-				}
+				
 			}
 		}
 	
