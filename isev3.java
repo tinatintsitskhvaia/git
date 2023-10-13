@@ -4,16 +4,19 @@ public class isev3 extends SuperKarel{
 	//es meotxea
 	public void run() {
 		getToTheUpMiddle();
-		//getDown();
-		//putBeeper();
+	    getDown();
+		putBeeper();
 		
 		
 	}
 
-	//private void getDown() {
+    private void getDown() {
+		turnAround();
+		while(frontIsClear()){
+			move();
+		}
 		
-		
-	//}
+	}
 
 	private void getToTheUpMiddle() {
 		while(frontIsClear()){
