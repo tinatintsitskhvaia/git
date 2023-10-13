@@ -3,16 +3,17 @@ public class ass13 extends SuperKarel{
 	public void run(){
 		fillTheRow();
 		goBack();
-		fillVerticalRow();
-		goBack();
-		turnAround();
-		if(frontIsClear()){
-			move();
-			turnLeft();
+		while(frontIsClear()){
 			fillVerticalRow();
+			goBack();
+			turnAround();
+			if(frontIsClear()){
+				move();
+				turnLeft();
+				fillVerticalRow();
+			}
 		}
-}
-
+	}
 	private void fillVerticalRow() {
 		if(beepersPresent()){
 			if(frontIsClear()){
