@@ -7,7 +7,6 @@ public class ass13 extends SuperKarel{
 		}
 		
 	private void fillVerticalRow() {
-		turnRight();
 		if(beepersPresent()){
 			if(frontIsClear()){
 				move();
@@ -30,7 +29,7 @@ public class ass13 extends SuperKarel{
 		while(frontIsClear()){
 			move();
 		}
-		turnAround();
+		turnRight();
 	}
 
 	private void fillTheRow() {
