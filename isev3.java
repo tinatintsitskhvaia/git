@@ -18,16 +18,16 @@ public class isev3 extends SuperKarel{
 	//}
 
 	private void getToTheUpMiddle() {
-		while(frontIsClear()){
+		while(frontIsClear()&& leftIsClear()){
 			move();
 			turnLeft();
 			if(frontIsClear()){
 				move();
 				if(frontIsClear()){
 					move();
+					turnRight();
 				}
-		}
-			turnRight();
+			}
 		}
 	}
 }
