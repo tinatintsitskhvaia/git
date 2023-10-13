@@ -19,17 +19,18 @@ public class isev3 extends SuperKarel{
 		while(frontIsClear()){
 			move();
 			turnLeft();
-			if(leftIsClear()){
+			if(frontIsClear()){
 				move();
-				if(leftIsClear()){
+				if(frontIsClear()){
 					move();
-					turnLeft();
-				
 				}else{
-					turnLeft();
+					turnRight();
+				}
+				}else{
+					turnRight();
 				}
 			}
 		}
 		
 	}
-}
+
