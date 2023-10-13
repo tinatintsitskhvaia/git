@@ -4,6 +4,7 @@ public class ass13 extends SuperKarel{
 		fillTheRow();
 		goBack();
 		fillVerticalRow();
+		goBack();
 }
 
 	private void fillVerticalRow() {
