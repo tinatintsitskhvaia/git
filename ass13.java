@@ -4,8 +4,18 @@ public class ass13 extends SuperKarel{
 		fillTheRow();
 		goBack();
 		fillVerticalRow();
+		moveToTheNextVerticalRow();
 		}
 		
+	private void moveToTheNextVerticalRow() {
+		turnAround();
+		while(frontIsClear()){
+			move();
+			fillVerticalRow();
+		}
+		
+	}
+
 	private void fillVerticalRow() {
 		if(beepersPresent()){
 			if(frontIsClear()){
