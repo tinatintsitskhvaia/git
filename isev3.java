@@ -23,7 +23,6 @@ public class isev3 extends SuperKarel{
 				move();
 				if(leftIsClear()){
 					move();
-					turnRight();
 				
 				}
 			}
