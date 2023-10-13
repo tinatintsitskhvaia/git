@@ -41,7 +41,9 @@ public class ass13 extends SuperKarel{
 			move();
 			if(frontIsClear()){
 				move();
-				putBeeper();
+				if(noBeepersPresent()){
+					putBeeper();
+				}
 				
 			}
 		}
