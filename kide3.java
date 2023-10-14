@@ -36,10 +36,6 @@ public class kide3 extends SuperKarel{
 				move();
 				fillLine();
 			}
-		}else{
-			while(notFacingNorth()){
-				turnLeft();
-			}
 		}
 		
 		
