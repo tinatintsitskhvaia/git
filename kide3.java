@@ -1,10 +1,9 @@
 import stanford.karel.*;
 public class kide3 extends SuperKarel{
 	public void run() {
-		while(frontIsClear()){
 			fillLine();
 	}
-}
+
 		
 	
 
@@ -15,6 +14,7 @@ public class kide3 extends SuperKarel{
 				move();
 				if(frontIsClear()){
 					move();
+					putBeeper();
 				}
 			}
 		}
