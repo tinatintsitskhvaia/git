@@ -5,6 +5,10 @@ public class kide3 extends SuperKarel{
 		returnBack();
 		turnAround();
 		fillTheVerticalLine();
+		while(frontIsClear()){
+			move();
+			fillTheVerticalLine();
+		}
 	}
 
 	private void fillTheVerticalLine() {
@@ -31,6 +35,7 @@ public class kide3 extends SuperKarel{
 			}
 		}
 		returnBack();
+		turnLeft();
 		
 	}
 
