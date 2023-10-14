@@ -45,6 +45,7 @@ public class kide3 extends SuperKarel{
 
 
 	private void fillLine() {
+		while(frontIsClear()){
 		putBeeper();
 		while(frontIsClear()){
 			if(frontIsClear()){
@@ -57,5 +58,5 @@ public class kide3 extends SuperKarel{
 		}
 		
 	}
-
+	}
 }
