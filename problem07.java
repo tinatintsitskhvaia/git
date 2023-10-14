@@ -1,4 +1,4 @@
-import stanford.karel.*;
+import  stanford.karel.*;
 public class problem07 extends Karel{
 	public void run() {
 		while(notFacingNorth()){
