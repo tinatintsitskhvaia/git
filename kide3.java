@@ -20,10 +20,11 @@ public class kide3 extends SuperKarel{
 				turnLeft();
 				move();
 				turnLeft();
-				move();
+				if(frontIsClear()){
+					move();
 				fillLine();
-			}
-		}else if(facingWest() && rightIsClear()){
+			}else if
+				(facingWest() && rightIsClear()){
 			if(noBeepersPresent()){
 				turnRight();
 				move();
@@ -33,25 +34,27 @@ public class kide3 extends SuperKarel{
 				turnRight();
 				move();
 				turnRight();
-				move();
+				if(frontIsClear()){
+					move();
 				fillLine();
 			}
 		}
 		
-		
+			}	
+			}}
 	}
 
 
 
 
 	private void fillLine() {
-		while(frontIsClear()){
 		putBeeper();
 		while(frontIsClear()){
 			if(frontIsClear()){
 				move();
 				if(frontIsClear()){
 					move();
+					putBeeper();
 					
 				}
 			}
@@ -59,4 +62,4 @@ public class kide3 extends SuperKarel{
 		
 	}
 	}
-}
+
