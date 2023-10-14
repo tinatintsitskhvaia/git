@@ -20,6 +20,13 @@ public class kide3 extends SuperKarel{
 						}
 						}
 					}
+			}else{
+				while(frontIsClear()){
+					if(frontIsClear()){
+						move();
+						fillLine();
+					}
+				}
 			}
 		}
 		
