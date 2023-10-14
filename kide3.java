@@ -1,51 +1,37 @@
 import stanford.karel.*;
 public class kide3 extends SuperKarel{
 	public void run() {
-		while(notFacingNorth()){
-			fillLine();
-			moveToTheNextLineIfPossible();
+		fillLine();
+		returnBack();
+		fillTheVerticalLine();
 	}
-}
-		
-	
 
-	private void moveToTheNextLineIfPossible() {
-		if(facingEast() && leftIsClear()){
-			if(noBeepersPresent()){
-				turnLeft();
-				move();
-				turnLeft();
-				fillLine();
-			}else{
-				turnLeft();
-				move();
-				turnLeft();
-				if(frontIsClear()){
-					move();
-				fillLine();
-			}else if
-				(facingWest() && rightIsClear()){
-			if(noBeepersPresent()){
-				turnRight();
-				move();
-				turnRight();
-				fillLine();
-			}else{
-				turnRight();
-				move();
-				turnRight();
-				if(frontIsClear()){
-					move();
-				fillLine();
+	private void fillTheVerticalLine() {
+		turnLeft();
+		while(frontIsClear()){
+			if(beepersPresent()){
+				while(frontIsClear()){
+					if(frontIsClear()){
+						move();
+						if(frontIsClear()){
+							move();
+							putBeeper();
+							
+						}
+						}
+					}
 			}
 		}
 		
-			}	
-			}}
 	}
 
-
-
+	private void returnBack() {
+		turnAround();
+		while(frontIsClear()){
+			move();
+		}
+		turnAround();
+	}
 
 	private void fillLine() {
 		putBeeper();
@@ -55,11 +41,10 @@ public class kide3 extends SuperKarel{
 				if(frontIsClear()){
 					move();
 					putBeeper();
-					
 				}
 			}
 		}
 		
 	}
-	}
+}
 
