@@ -3,6 +3,7 @@ public class kide3 extends SuperKarel{
 	public void run() {
 		fillLine();
 		returnBack();
+		turnAround();
 		fillTheVerticalLine();
 	}
 
@@ -29,6 +30,7 @@ public class kide3 extends SuperKarel{
 				}
 			}
 		}
+		returnBack();
 		
 	}
 
@@ -37,7 +39,6 @@ public class kide3 extends SuperKarel{
 		while(frontIsClear()){
 			move();
 		}
-		turnAround();
 	}
 
 	private void fillLine() {
