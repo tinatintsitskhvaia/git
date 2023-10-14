@@ -51,7 +51,7 @@ public class kide3 extends SuperKarel{
 				move();
 				if(frontIsClear()){
 					move();
-					putBeeper();
+					
 				}
 			}
 		}
