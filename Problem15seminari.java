@@ -5,7 +5,7 @@ public class Problem15seminari extends ConsoleProgram{
 		double num2 = readInt( "enter second number: ");
 		
 		double avg = (num1 + num2) / 2  ;
-		
+		println(avg);
 
 		
 	}
