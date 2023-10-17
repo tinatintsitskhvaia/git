@@ -9,9 +9,9 @@ public class Problem18 extends ConsoleProgram {
 		}else{
 			println(num2);
 		}
-		if( num1 == num2 ){
-			println(num1);
-		}
+			
+		
+		println(Math.max(num1, num2));
 	}
 
 }
