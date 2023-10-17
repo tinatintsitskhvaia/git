@@ -1,7 +1,4 @@
-import java.awt.Color;
-
-import acm.graphics.*;
-import acm.program.GraphicsProgram;
+imort acm.GraphicsProgram
 
 public class problem12 extends GraphicsProgram{
 	public void run() {
