@@ -35,7 +35,7 @@ public class Problem14 extends GraphicsProgram {
 		GOval eye = new GOval (60, 40);
 		eye.setFilled(true);
 		eye.setColor(Color.GREEN);
-		int x = (getWidth() - 60) / 2 - 60;
+		int x = (getWidth()  - 60) / 2 - 60;
 		int y = (getHeight() + 40) / 2 + 80;
 		add(eye, x, y);
 	}
