@@ -8,10 +8,6 @@ public class Problem18 extends ConsoleProgram {
 			println(num1);
 		}else{
 			println(num2);
-		}
-			
-		
-		println(Math.max(num1, num2));
+		}		
 	}
-
 }
