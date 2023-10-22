@@ -14,14 +14,14 @@ public class Problem21 extends GraphicsProgram {
 		double y1 = 0;
 		double y2 = getHeight();
 		GLine line = new GLine(x, y1 , x, y2);
-		
+		add(line);
 	}
 	private void drawHorisontalLine(int i) {
 		double y = i *( getHeight() / (NUM_LINES-1.0));
 		double x1 = 0;
 		double x2 = getWidth();
 		GLine line = new GLine(x1, y , x2, y);
-		add Line;
+		add (line);
 		
 	}
 
