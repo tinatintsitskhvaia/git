@@ -12,13 +12,13 @@ public class Problem12 extends GraphicsProgram{
 		double x1 = getWidth()/ 2 - 150;
 		double y1 = getHeight() - 400;
 		double x2 = x1 + 150;
-		double y2 = y1 - 200;
+		double y2 = y1 - 100;
 		 GLine leftRoof = new GLine(x1, y1, x2, y2);
 		 add(leftRoof);
 		 x1 = x2;
 		 y1 = y2;
 		 x2 = x1 + 150;
-		 y2 = y1 + 200;
+		 y2 = y1 + 100;
 		 GLine rightRoof = new GLine( x1, y1, x2, y2);
 		 add(rightRoof);
 				 
