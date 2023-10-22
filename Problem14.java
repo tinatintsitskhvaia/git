@@ -26,7 +26,7 @@ public class Problem14 extends GraphicsProgram {
 		eye.setFilled(true);
 		eye.setColor(Color.GREEN);
 		int x = (getWidth() /2 + 30);
-		int y = (getHeight() - 40) / 2 + 80;
+		int y = (getHeight() + 40) / 2 + 80;
 		add(eye, x, y);
 		
 	}
@@ -36,7 +36,7 @@ public class Problem14 extends GraphicsProgram {
 		eye.setFilled(true);
 		eye.setColor(Color.GREEN);
 		int x = (getWidth() - 60) / 2 - 60;
-		int y = (getHeight() - 40) / 2 + 80;
+		int y = (getHeight() + 40) / 2 + 80;
 		add(eye, x, y);
 	}
 
