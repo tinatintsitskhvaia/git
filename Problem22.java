@@ -19,7 +19,7 @@ public class Problem22 extends GraphicsProgram{
 	private void drawSquare(double x, double y, double length, boolean isFilled) {
 		GRect square = new GRect(length, length);
 		square.setFilled(isFilled);
-		add(square, x, y);
+		add (square, x, y);
 		
 	}
 
