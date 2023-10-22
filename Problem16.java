@@ -9,7 +9,7 @@ public class Problem16 extends ConsoleProgram{
 		int num2 = readInt("enter second number: ");
 		int num3 = readInt("enter third number: ");
 		
-		double harmonic = 1 /(1 / num1 + 1 / num2 + 1 / num3);
+		double harmonic = 1 /(1 /(double) num1 + 1 /(double) num2 + 1 /(double) num3);
 		println("result: " + harmonic);
 	}
 
