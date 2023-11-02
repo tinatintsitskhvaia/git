@@ -12,23 +12,6 @@ public class Problem36 extends ConsoleProgram {
 		double avgFlips = sumFlips / NUM_EXPERIMENTS;
 		println(avgFlips);
 	}
-	private int holdExperiment() {
-		int numFlips = 0;
-		int numConsecutiveHeads = 0;
-		while(true) {
-			numFlips += 1;
-			boolean isHeads = rgen.nextBoolean();
-			if(isHeads) {
-				numConsecutiveHeads += 1;
-				if(numConsecutiveHeads == 3) {
-					break;
-				}else {
-					numConsecutiveHeads = 0;
-				}
-			}
-		
-		return  numFlips;
-		}
-	}
+	private int holdExperiment() { }
 }
 
