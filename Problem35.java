@@ -15,6 +15,7 @@ public class Problem35 extends ConsoleProgram {
 	private int holdExperiment() {
 		int numFlips = 0;
 		while(true) {
+			numFlips++;
 			boolean isHeads = rgen.nextBoolean();
 			if(isHeads) {
 				break;
