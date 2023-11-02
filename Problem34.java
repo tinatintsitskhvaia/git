@@ -8,8 +8,8 @@ public class Problem34 extends GraphicsProgram {
 	private static final int MIN_RADIUS = 10;
 	private static final int MAX_RADIUS = 20;
 	public void run() {
-		int b = rgen.nextInt();
-		
+		for( int i = 0 ; i < 1000; i++);
+			addRandomCircle();
 		
 		
 		
@@ -26,6 +26,7 @@ public class Problem34 extends GraphicsProgram {
 			GOval circle = new GOval (2* radius, 2 * radius);
 			circle.setFilled(true);
 			circle.setColor(color);
+			add(circle);
 		
 	}
 }
