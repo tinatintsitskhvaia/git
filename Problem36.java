@@ -12,6 +12,10 @@ public class Problem36 extends ConsoleProgram {
 		double avgFlips = sumFlips / NUM_EXPERIMENTS;
 		println(avgFlips);
 	}
-	private int holdExperiment() { }
+	private int holdExperiment() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }
 
