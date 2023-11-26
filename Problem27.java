@@ -10,8 +10,8 @@ public class Problem27 extends ConsoleProgram {
 
 	private int pow(int n, int m) {
 		int res = 1;
-		for( int i = 1 ; i < m; i++){
-			res *= i;
+		for( int i = 0 ; i < m; i++){
+			res *= n;
 		}
 		return res;
 	}
