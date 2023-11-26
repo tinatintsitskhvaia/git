@@ -6,6 +6,7 @@ public class Problem25 extends ConsoleProgram {
 		int m = readInt("Enter positive number:  ");
 
 		int lcm = lcm(n, m);
+		println(lcm);
 	}
 
 	private int lcm(int n, int m) {
