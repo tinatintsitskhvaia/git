@@ -5,7 +5,8 @@ public class Problem26 extends ConsoleProgram{
 		int m = readInt("Enter positive number: ");
 
 		int gcd= gcd(n, m);
-	}
+		println(gcd);	
+		}
 
 	private int gcd(int n, int m) {
 		for (int i = Math.min(n, m); i >= 1; i--) {
