@@ -8,6 +8,7 @@ public class Problem24 extends ConsoleProgram {
 				divNum +=1;
 			}
 		}
+		println(divNum);
 	}
 
 }
