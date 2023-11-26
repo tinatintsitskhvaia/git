@@ -5,7 +5,7 @@ public class Problem23 extends ConsoleProgram {
 		int n = readInt("enter n: ");
 		int sum = 0;
 		for (int i = 0; i < n; i++) {
-			sum += sum + i;
+			sum += i;
 		}
 		println(sum);
 	}
