@@ -4,7 +4,7 @@ public class Problem24 extends ConsoleProgram {
 		int n = readInt("enter  n ");
 		int divNum = 0;
 		for(int i = 1; i <= n; i++) {
-			if (n%1 ==0){
+			if (n% i ==0){
 				divNum +=1;
 			}
 		}
