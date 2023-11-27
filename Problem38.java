@@ -8,6 +8,9 @@ public class Problem38 extends ConsoleProgram{
 			int betMoney = readInt ("bet money is: ");
 			int n = readInt(" your number is: ");
 			int rouletteResult = rgen.nextInt(0, 36);
+			if ( betMoney > initialMoney) {
+				println("you do not have enough money , broke bish");
+			}
 			if (n== rouletteResult) {
 				initialMoney = initialMoney + betMoney; 
 				println(" you won" + betMoney +" dollars, now you have"+ initialMoney + " dollars");
