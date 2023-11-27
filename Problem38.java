@@ -6,8 +6,9 @@ public class Problem38 extends ConsoleProgram{
 		int initialMoney = 1000;
 		while (initialMoney > 0) {
 			int betMoney = readInt ("bet money is: ");
+			int n = readInt(" your number is: ");
 			int rouletteResult = rgen.nextInt(0, 36);
-			if (betMoney== rouletteResult) {
+			if (n== rouletteResult) {
 				initialMoney = initialMoney + betMoney; 
 				println(" you won" + betMoney +" dollars, now you have"+ initialMoney + " dollars");
 			}else {
