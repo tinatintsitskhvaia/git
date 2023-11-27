@@ -7,6 +7,9 @@ public class Problem41  extends GraphicsProgram{
 	public void run() {
 		addMouseListeners();
 	}
+	public void mouseDragged(MouseEvent e) {
+		paintCircle(e.getX(), e.getY());
+	}
 	
 	public void mousePressed(MouseEvent e) {
 		paintCircle(e.getX(), e.getY());
@@ -19,7 +22,5 @@ public class Problem41  extends GraphicsProgram{
 		
 	}
 
-	private void mouseDragged(MouseEvent e) {
-		paintCircle(e.getX(), e.getY());
-	}
+	
 }
