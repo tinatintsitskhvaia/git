@@ -13,8 +13,21 @@ public class Problem36 extends ConsoleProgram {
 		println(avgFlips);
 	}
 	private int holdExperiment() {
-		// TODO Auto-generated method stub
-		return 0;
+		int  numFlips = 0;
+		int numConsecutiveHeads= 0;
+		while(true) {
+			numFlips += 1;
+			boolean isHeads = rgen.nextBoolean(0.4);
+			if(isHeads) {
+				numConsecutiveHeads +=1;
+				if(numConsecutiveHeads ==3 ) {
+					break;
+				}
+			}else {
+				numConsecutiveHeads = 0;
+			}
+		}
+		return numFlips;
 	}
 
 }
