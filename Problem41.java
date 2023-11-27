@@ -1,6 +1,6 @@
 import acm.graphics.GOval;
 import acm.program.*;
-import javafx.scene.input.MouseEvent;
+import java.awt.event.MouseEvent;
 public class Problem41  extends GraphicsProgram{
 	private static final int RADIUS = 30;
 	
