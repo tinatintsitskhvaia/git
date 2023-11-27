@@ -4,6 +4,7 @@ public class Problem29 extends ConsoleProgram{
 	public void run() {
 		int n = readInt("enter n:  ");
 		int fibN = getFib(n);
+		println(fibN);
 		}
 
 	private int getFib(int n) {
