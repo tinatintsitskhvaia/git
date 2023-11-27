@@ -7,8 +7,6 @@ public class Problem31 extends ConsoleProgram {
 		for (int i = 2; i <= Math.sqrt(n); i++) {
 			if (n % i == 0) {
 				println(" n is not prime");
-			} else{
-				println( "n is prime");
 			}
 		}
         
