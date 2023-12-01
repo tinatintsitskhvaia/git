@@ -10,7 +10,7 @@ public class midterm2 extends ConsoleProgram {
 	private String longestRunCompression(String text) {
 		if (text == null) {
 			return "please enter text";
-		}
+		} 
 
 		StringBuilder result = new StringBuilder();
 		char currChar = text.charAt(0);
