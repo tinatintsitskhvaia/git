@@ -4,7 +4,6 @@ public class Problem51  extends ConsoleProgram{
 		
 	}
 	private String removeDuplicates(String text) {
-		text.re
 		return text;
 		
 	}
