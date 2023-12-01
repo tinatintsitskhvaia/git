@@ -4,7 +4,7 @@ import acm.util.RandomGenerator;
 public class midterm11 extends ConsoleProgram {
 	private static final int NUM_EXPERIMENTS = 1000;
 	RandomGenerator rgen = RandomGenerator.getInstance();
-	private double n;
+	private int n;
 
 	public void run() {
 		n = readInt();
