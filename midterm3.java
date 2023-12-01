@@ -38,7 +38,7 @@ public class midterm3 extends GraphicsProgram {
 	
 	public void mouseDragged(MouseEvent e) {
 		dragPoint = new GPoint(e.getPoint());
-		if( getWidth() / 2 - dragPoint.getX() > getWidth() / 2 - start.getX() || getHeight() / 2 - dragPoint.getX() > getHeight() / 2 - start.getX()) {
+		if( getWidth() / 2 - dragPoint.getX() > getWidth() / 2 - start.getX() || getHeight() / 2 - dragPoint.getY() > getHeight() / 2 - start.getY()) {
 			radius--;
 		}else{
 			radius ++;
