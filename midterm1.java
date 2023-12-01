@@ -9,7 +9,7 @@ public class midterm1 extends ConsoleProgram { //2016.1.3
 			res++;
 			k*=n;
 		}
-		
+		println(res);
 		
 	}
 }
