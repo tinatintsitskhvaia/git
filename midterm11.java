@@ -14,7 +14,7 @@ public class midterm11 extends ConsoleProgram {
 			sumFlips += currFlips;
 		}
 		double avgFlips = sumFlips / NUM_EXPERIMENTS;
-
+		println(avgFlips);
 	}
 
 	private int holdExperiment() {
