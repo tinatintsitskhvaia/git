@@ -21,17 +21,7 @@ public class midterm2 extends ConsoleProgram {
 				count = 1;
 			}
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+				
 		return result.toString();
 	}
 
