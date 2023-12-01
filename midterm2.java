@@ -2,31 +2,25 @@ import acm.program.*;
 
 public class midterm2 extends ConsoleProgram {
 	public void run() {
-		String text = readLine("enter text to compress: ");
-		String result = longestRunCompression(text);
-		println(result);
+		String s = readLine();
+		longestRunCompression(s);
 	}
 
-	private String longestRunCompression(String text) {
-		if (text == null) {
-			return "please enter text";
-		} 
-
-		StringBuilder result = new StringBuilder();
-		char currChar = text.charAt(0);
+	private void longestRunCompression(String s) {
 		int count = 1;
-		for( int i = 1; i < text.length() ; i++){
-			char nextChar = text.charAt(i);
-			if (nextChar==currChar) {
-				count ++;
+		
+		for( int i = 0; i < s.length(); i++) {
+			char curr = s.charAt(i);
+			if(i< s.length() -1 && curr == s.charAt(i +1)) {
+				count++;
 			}else{
-				result.append(count).append(text.charAt(i));
-				currChar = nextChar;
+				if(count > 1) {
+					print(count);
+				}
+				print(curr);
 				count = 1;
 			}
 		}
-		result.append(count).append(currChar);
-		return result.toString();
 	}
 
 }
