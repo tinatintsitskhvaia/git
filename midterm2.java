@@ -5,7 +5,7 @@ public class midterm2 extends ConsoleProgram{
 		println("Compressed version of the string is: " + compressedString);
 	}
 	int count = 1;
-	String compressedString = ("");
+	String compressedString = "";
 	private String longestRunCompress(String text) {
 		for( int i = 0; i < text.length()-1; i ++) {
 			while(text.charAt(i) == text.charAt(i +1)) {
