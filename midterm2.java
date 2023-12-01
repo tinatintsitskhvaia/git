@@ -2,7 +2,7 @@ import acm.program.*;
 public class midterm2 extends ConsoleProgram{
 	public void run() {
 		String text = readLine("enter text to compress: ");
-		println("Compressed version of the string is: " + longestRunCompress(text));
+		println("Compressed version of the string is: " + compressedString);
 	}
 	int count = 1;
 	String compressedString = ("");
