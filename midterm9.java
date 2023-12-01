@@ -10,8 +10,8 @@ public class midterm9 extends ConsoleProgram {
 				for (int j = 2; j < i; j++) {
 					continue;
 				}
+				println(i);
 			}
-			println(i);
 			
 		}
 		
