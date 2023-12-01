@@ -6,7 +6,7 @@ public class midterm5 extends ConsoleProgram {
 		int m = readInt();
 		int q = m /n;
 		boolean check = true;
-		while( n != -1) {
+		while( n != -1 && m != -1) {
 			n = m;
 			m = readInt();
 			if(m != n* q) {
