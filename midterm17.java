@@ -7,7 +7,7 @@ import java.awt.event.MouseEvent;
 import acm.graphics.*;
 public class midterm17 extends GraphicsProgram{
 	private static final int CIRCLE_D = 100;
-	private static final int DELAY = 200;
+	private static final int DELAY = 10;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private GObject selectedObject = null;
 	public void init() {
