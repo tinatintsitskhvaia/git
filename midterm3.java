@@ -12,7 +12,10 @@ public class midterm3 extends GraphicsProgram {
 	private GPoint dragPoint;
 	private double radius = CIRCLE_D /2;
 	
-
+	public void init() {
+		drawCircle();
+		pause(2);
+	}
 	
 
 	private void drawCircle() {
@@ -22,7 +25,7 @@ public class midterm3 extends GraphicsProgram {
 	}
 
 	public void run() {
-		drawCircle();
+		
 		rgen = RandomGenerator.getInstance();
 		addMouseListeners();
 	}
