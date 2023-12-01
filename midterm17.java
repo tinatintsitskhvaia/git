@@ -24,6 +24,7 @@ public class midterm17 extends GraphicsProgram{
 				}
 				selectedObject= null;
 			}
+			pause(10);
 		}
 		
 		
