@@ -53,9 +53,9 @@ public class midterm17 extends GraphicsProgram{
 		 GObject object = getElementAt(x, y);
 		 if(object == null) {
 			 GOval oval = new GOval(CIRCLE_D, CIRCLE_D);
-			 add(oval,x - CIRCLE_D, y- CIRCLE_D);
 			 oval.setFilled(true);
 			 oval.setColor(myRandomColor());
+			 add(oval,x - CIRCLE_D, y- CIRCLE_D);
 		 }else{
 			 selectedObject = object;
 		 }
