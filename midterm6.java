@@ -1,7 +1,7 @@
 import acm.program.*;
 public class midterm6 extends ConsoleProgram {
 	public void run() {
-		String s =" how arxxe youuunn";
+		String s =" how arxzzxe youuunn";
 		println(unEvilText(s));
 	}
 
