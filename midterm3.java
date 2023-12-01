@@ -1,3 +1,4 @@
+import java.awt.Color;
 import java.awt.event.MouseEvent;
 
 import acm.graphics.*;
@@ -21,6 +22,7 @@ public class midterm3 extends GraphicsProgram {
 	private void drawCircle() {
 		circle = new GOval(CIRCLE_D, CIRCLE_D);
 		circle.setFilled(true);
+		circle.setColor(Color.BLACK);
 		add(circle, getWidth() - CIRCLE_D / 2, getHeight() - CIRCLE_D / 2);
 	}
 
