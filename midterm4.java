@@ -15,9 +15,9 @@ public class midterm4 extends ConsoleProgram {
 			int k = readInt("k ");
 			if (k != -1 && k - m == d) {
 				m = k;
-				println("ariwmewik progresia");
+				
 			}
-			
+			println("ariwmewik progresia");
 		}
 		
 	}
