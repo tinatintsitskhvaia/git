@@ -13,9 +13,7 @@ public class midterm3 extends GraphicsProgram {
 	private double radius = CIRCLE_D /2;
 	
 
-	public void init() {
-		drawCircle();
-	}
+	
 
 	private void drawCircle() {
 		circle = new GOval(CIRCLE_D, CIRCLE_D);
@@ -24,6 +22,7 @@ public class midterm3 extends GraphicsProgram {
 	}
 
 	public void run() {
+		drawCircle();
 		rgen = RandomGenerator.getInstance();
 		addMouseListeners();
 	}
