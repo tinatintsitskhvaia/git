@@ -5,7 +5,7 @@ public class midterm1 extends ConsoleProgram { //2016.1.3
 		int m = readInt("m: ");
 		int k =1;
 		int res= 0;
-		while(k <=m) {
+		while(k <= m) {
 			res++;
 			k*=n;
 		}
