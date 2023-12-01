@@ -3,7 +3,7 @@ public class midterm10 extends ConsoleProgram {
 	public void run() {
 		String a = readLine();
 		String b = readLine();
-		sheidzleba(a,b);
+		println(sheidzleba(a,b));
 		
 	}
 	private boolean sheidzleba(String a , String b) {
