@@ -10,7 +10,7 @@ public class midterm7 extends ConsoleProgram {
 			if(n== -1){
 				break;
 			}
-			println(curr);
+			
 			if(fib){
 				if(n != curr) {
 					fib = false;
