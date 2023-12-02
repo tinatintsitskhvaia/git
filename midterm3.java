@@ -15,7 +15,6 @@ public class midterm3 extends GraphicsProgram {
 	
 	public void init() {
 		drawCircle();
-		pause(2);
 	}
 	
 
