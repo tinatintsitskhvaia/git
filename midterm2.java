@@ -21,6 +21,7 @@ public class midterm2 extends ConsoleProgram {
 				count = 1;
 			}
 		}
+		
 	}
 
 }
