@@ -18,7 +18,7 @@ public class midterm5 extends ConsoleProgram {
 		}
 		if( n == -1 || m == -1) {
 			println("undefined");
-		}
+		}else
 		if (check) {
 			println("geometr");
 		}else{
