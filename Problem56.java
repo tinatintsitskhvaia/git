@@ -8,8 +8,10 @@ public class Problem56 extends ConsoleProgram{
 		for (int i =0; i < arr.length; i++) {
 			arr[i]= readInt("num: ");
 		}
+		println(Arrays.toString(arr));
 		Arrays.sort(arr);
-		println(arr.toString());
+		println("zrdadobis mixedvit aris: ");
+		println(Arrays.toString(arr));
 	}
 
 }
