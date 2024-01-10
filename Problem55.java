@@ -9,14 +9,20 @@ public class Problem55 extends ConsoleProgram {
 		enterNumbers(arr);
 		int[] copy = arr;
 		Arrays.sort(arr);
-		for (int i = 0; i < arr.length; i++) {
-			if(arr[i] == copy[i]) {
-				println("is sorted");
-			}else{
-				println("it is  not sorted");
+		println(isEqual(copy, arr));
+
+	}
+
+
+	private boolean isEqual(int[] copy, int[] arr) {
+		Arrays.sort(arr);
+		for(int i =0; i <arr.length; i++) {
+			if(arr[i] != copy[i]) {
+				return false;
 			}
 		}
-
+		return true;
+		
 	}
 
 
