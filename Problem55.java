@@ -8,25 +8,17 @@ public class Problem55 extends ConsoleProgram {
 		int[] arr = new int[n];
 		enterNumbers(arr);
 		int[] copy = arr;
-		if(isEqual(copy, arr)== true ) {
-			println("is Sorted");
-		}else{ 
-			println("it is not sorted");
-		}
-
-	}
-
-	private boolean isEqual(int[] copy, int[] arr) {
-		
 		Arrays.sort(arr);
 		for (int i = 0; i < arr.length; i++) {
 			if(arr[i] == copy[i]) {
-				return true;
+				println("is sorted");
+			}else{
+				println("it is  not sorted");
 			}
 		}
-		return false;
 
 	}
+
 
 	private void enterNumbers(int[] arr) {
 		for (int i = 0; i < arr.length; i++) {
