@@ -8,7 +8,6 @@ public class Problem55 extends ConsoleProgram {
 		int[] arr = new int[n];
 		enterNumbers(arr);
 		int[] copy = arr;
-		Arrays.sort(arr);
 		println(isEqual(copy, arr));
 
 	}
