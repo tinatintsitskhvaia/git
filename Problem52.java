@@ -7,7 +7,7 @@ import acm.program.*;
 public class Problem52 extends ConsoleProgram{
 	public void run() {
 		try{
-			BufferedReader reader = new BufferedReader(new FileReader("/Practice/Problem52.java"));
+			BufferedReader reader = new BufferedReader(new FileReader("Practice/Problem52.java"));
 			while(true) {
 				String nextLine = reader.readLine();
 				if(nextLine == null) {
