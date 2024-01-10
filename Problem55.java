@@ -8,7 +8,7 @@ public class Problem55 extends ConsoleProgram {
 		int[] arr = new int[n];
 		enterNumbers(arr);
 		int[] copy = arr;
-		if(isEqual(copy, arr)) {
+		if(isEqual(copy, arr) ) {
 			println("is Sorted");
 		}else{ 
 			println("it is not sorted");
