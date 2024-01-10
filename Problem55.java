@@ -6,8 +6,9 @@ public class Problem55 extends ConsoleProgram {
 	public void run() {
 		int n = readInt("enter amount:");
 		int[] arr = new int[n];
-		enterNumbers(arr);
-		int[] copy = arr;
+		
+		int[] copy = new int[n];
+		enterNumbers(arr, copy);
 		println(isEqual(copy, arr));
 
 	}
@@ -29,9 +30,10 @@ public class Problem55 extends ConsoleProgram {
 	}
 
 
-	private void enterNumbers(int[] arr) {
+	private void enterNumbers(int[] arr, int[] copy) {
 		for (int i = 0; i < arr.length; i++) {
 			arr[i] = readInt("enter number");
+			copy[i] = arr[i];
 		}
 	}
 
