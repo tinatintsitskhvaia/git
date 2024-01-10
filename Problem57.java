@@ -2,7 +2,7 @@ import acm.program.*;
 public class Problem57 extends ConsoleProgram{
 	public void run() {
 		String str1="desserts";
-		String str2="stressed";
+		String str2="stresses";
 		println(areAnagrams(str1 , str2));	
 	}
 
