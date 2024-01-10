@@ -55,7 +55,7 @@ public class midterm17 extends GraphicsProgram{
 			 GOval oval = new GOval(CIRCLE_D, CIRCLE_D);
 			 oval.setFilled(true);
 			 oval.setColor(myRandomColor());
-			 add(oval,x - CIRCLE_D, y- CIRCLE_D);
+			 add(oval,x - CIRCLE_D/2, y- CIRCLE_D/2);
 		 }else{
 			 selectedObject = object;
 		 }
