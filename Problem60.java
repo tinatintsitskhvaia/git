@@ -12,7 +12,7 @@ public class Problem60 extends ConsoleProgram {
 			enteredNums.add(n);
 
 		}
-		for(int i =enteredNums.size(); i>=0; i++) {
+		for(int i =enteredNums.size(); i>=0; i--) {
 			println(enteredNums.get(i));
 			
 			
