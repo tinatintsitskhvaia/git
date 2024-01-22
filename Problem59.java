@@ -23,7 +23,7 @@ public class Problem59 extends ConsoleProgram {
 			}
 		}
 		
-		println("length of ones rectanngle in matrix " + matrix.toString() + " is" + max);
+		println("length of ones rectanngle in matrix   is " + max);
 				
 				
 	}
