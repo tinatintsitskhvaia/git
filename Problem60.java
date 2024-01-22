@@ -7,12 +7,12 @@ public class Problem60 extends ConsoleProgram {
 		while (true) {
 			int n = readInt("enter number: ");
 			enteredNums.add(n);
-			reversedArray(enteredNums);
 			if (n == -1) {
 				break;
 			}
 
 		}
+		reversedArray(enteredNums);
 
 		for (int i = 0; i < reversed.size(); i++) {
 			println(reversed.get(i));
