@@ -19,7 +19,7 @@ public class Problem60 extends ConsoleProgram {
 	}
 
 	private void reversedArray(ArrayList<Integer> enteredNums) {
-		for (int i =enteredNums.size(); i>0; i--) {
+		for (int i = enteredNums.size(); i>0; i--) {
 			reversed = new ArrayList<Integer>();
 			reversed.add(enteredNums.get(i-1));	
 		}
