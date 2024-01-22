@@ -21,7 +21,7 @@ public class Problem67  extends GraphicsProgram{
 			double y =(getHeight() -pic.getHeight())/2;
 			add(pic, x,y);
 			}catch(Exception ex) {
-				GLabel label =new GLabel("erroe, could not find that picture");
+				GLabel label =new GLabel("error, could not find that picture");
 				add(label, getWidth()/2, getHeight()/2);
 			}
 		}
