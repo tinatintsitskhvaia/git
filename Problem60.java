@@ -23,7 +23,7 @@ public class Problem60 extends ConsoleProgram {
 		for (int i = enteredNums.size(); i > 0; i--) {
 			reversed = new ArrayList<Integer>();
 			reversed.add(enteredNums.get(i - 1));
-			System.out.println(reversed.add(enteredNums.get(i - 1)));
+			System.out.println((enteredNums.get(i - 1)));
 
 		}
 	}
