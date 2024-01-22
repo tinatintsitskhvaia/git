@@ -27,7 +27,8 @@ public class Problem68 extends GraphicsProgram {
 			if(text != null || !text.equals("")) {
 				GLabel label = new GLabel(text);
 				add(label, x,y);
-				y +=y;
+				y +=25;
+				field.setText("");
 			}
 			
 		}
